@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {Inter} from 'next/font/google'
 import "@/styles/globals.css";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"], });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"],});
-
 export const metadata: Metadata = {
-  title: "Keita",
+  title: "Keita | Leading Africa-First Edtech Platform",
   description: "...",
 };
+
+const inter = Inter({subsets: ['latin']})
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
+      <body className={`relative bg-background text-foreground ${inter.className}`} >
         {children}
       </body>
     </html>

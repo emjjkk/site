@@ -1,3 +1,7 @@
 {
-    "lang": "EN"
+    "current_locale": "EN",
+    "subheader": {
+        "theme": "Theme"
+        
+    }
 }
