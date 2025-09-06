@@ -5,7 +5,7 @@ export default async function Subheader({ d }: any) {
 
     return (
         <>
-            <div className="w-full py-2 px-10 border-b flex items-center justify-between bg-background">
+            <div className="hidden md:flex w-full py-2 px-10 border-b items-center justify-between bg-background">
                 <div className="flex items-center">
                     <button className="text-xs">Keita Technologies Co. Ltd.</button>
                 </div>
