@@ -1,14 +1,19 @@
+"use client"
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Button } from '@/components/ui/button'
 import { LuAward, LuBookOpen, LuCheck, LuChevronDown, LuStar, LuUsers } from 'react-icons/lu'
 import Card from '@/components/course-card'
+
 // Mock Testimonial Component
 const Testimonial = () => {
     return (
-        <div className="border p-6">
+        <div className="border p-6" data-aos="fade-up">
             <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-gray-200 rounded-sm mr-4"></div>
                 <div>
-                    <h4 className="font-medium">Sarah Johnson</h4>
+                    <h4 className="font-medium">Ishimwe Hibigirimanayubmigantandatu</h4>
                     <p className="text-gray-500 text-sm">Software Engineer, Kenya</p>
                 </div>
             </div>
@@ -23,22 +28,30 @@ const Testimonial = () => {
 };
 
 export default function client() {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+        });
+    }, []);
+
     return (
         <>
             <main className="w-full border-b min-h-[150dvh]">
                 <section id="hero" className="h-[calc(100vh-89px)]">
                     <div className="flex h-[85%] border-b">
                         <div className="w-1/2 h-full flex flex-col justify-center pl-10 pr-15">
-                            <h1 className="text-5xl/[1.2] text-foreground font-bold mb-5">Gain Expertise, <br />Get Certified.</h1>
-                            <p className="text-md mb-10">Empower your future: study from anywhere and earn verified credentials from accredited institutions across Africa and beyond — all on Africa's leading industry-standard education platform.</p>
-                            <div className="flex">
+                            <h1 className="text-5xl/[1.2] text-foreground font-bold mb-5" data-aos="fade-down">Gain Expertise, <br />Get Certified.</h1>
+                            <p className="text-md mb-10" data-aos="fade-down" data-aos-delay="100">Empower your future: study from anywhere and earn verified credentials from accredited institutions across Africa and beyond — all on Africa's leading industry-standard education platform.</p>
+                            <div className="flex" data-aos="fade-down" data-aos-delay="200">
                                 <Button variant="default" size="default">Get started for free</Button>
                                 <Button variant="ghost" size="default">Learn More</Button>
                             </div>
                         </div>
-                        <div className="w-1/2 border-l"></div>
+                        <div className="w-1/2 border-l bg-cover bg-center bg-[url(https://images.pexels.com/photos/9159004/pexels-photo-9159004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)]"></div>
                     </div>
-                    <div className="h-[15%] flex items-center justify-center px-10 py-7 gap-10 border-b">
+                    <div className="h-[15%] flex items-center justify-center px-10 py-7 gap-10 border-b" data-aos="fade-up">
                         <img src="https://theroom.zendesk.com/hc/theming_assets/01HZKW9ES92YB3R6A2RP0B6XFJ" alt="ALU" className="h-full w-auto grayscale hover:grayscale-0" />
                         <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Alu_logo.png" alt="ALU" className="h-full w-auto grayscale hover:grayscale-0" />
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1075px-IBM_logo.svg.png" alt="ALU" className="h-full w-auto grayscale hover:grayscale-0" />
@@ -50,22 +63,22 @@ export default function client() {
                 </section>
                 <section className="bg-pattern p-10 border-b">
                     <div className="flex items-center gap-2 mb-10">
-                        <h1 className="text-2xl font-bold mr-5">Trending on Keita</h1>
-                        <Button variant="outline" size="default" className="flex items-center gap-2">Professional Certifications <LuChevronDown /></Button>
-                        <Button variant="outline" size="default" className="flex items-center gap-2">IT & Computer Science <LuChevronDown /></Button>
-                        <Button variant="default" size="default" className="flex items-center gap-2">See All</Button>
+                        <h1 className="text-2xl font-bold mr-5" data-aos="fade-right">Trending on Keita</h1>
+                        <Button variant="outline" size="default" className="flex items-center gap-2" data-aos="fade-up" data-aos-delay="100">Professional Certifications <LuChevronDown /></Button>
+                        <Button variant="outline" size="default" className="flex items-center gap-2" data-aos="fade-up" data-aos-delay="150">IT & Computer Science <LuChevronDown /></Button>
+                        <Button variant="default" size="default" className="flex items-center gap-2" data-aos="fade-up" data-aos-delay="200">See All</Button>
                     </div>
                     <div className="flex gap-3 flex-wrap mb-10">
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+                        <Card data-aos="fade-up" data-aos-delay="100" />
+                        <Card data-aos="fade-up" data-aos-delay="200" />
+                        <Card data-aos="fade-up" data-aos-delay="300" />
+                        <Card data-aos="fade-up" data-aos-delay="400" />
                     </div>
                 </section>
                 {/* For Students Section */}
                 <section className="border-b py-15 px-6 md:px-10">
                     <div className="">
-                        <div className="mb-12">
+                        <div className="mb-12" data-aos="fade-up">
                             <p className="text-gray-500 mb-2">For Students</p>
                             <h2 className="text-2xl md:text-3xl font-bold max-w-3xl">
                                 Gain certified credentials and job-ready skills from reputable institutions across Africa and beyond.
@@ -75,17 +88,17 @@ export default function client() {
                             {[
                                 { icon: <LuBookOpen className="text-2xl" />, title: "Self-Paced Learning", desc: "Learn on your schedule with our flexible courses" },
                                 { icon: <LuAward className="text-2xl" />, title: "Earn Certificates", desc: "Get recognized for your skills with credentials" },
-                                { icon: <LuUsers className="text-2xl" />, title: "Peer Community", desc: "Connect with fellow learners and experts" },
-                                { icon: <LuStar className="text-2xl" />, title: "Career Support", desc: "Get help with job placement and advancement" }
+                                { icon: <LuUsers className="text-2xl" />, title: "AI Integration", desc: "Connect with fellow learners and experts" },
+                                { icon: <LuStar className="text-2xl" />, title: "Offline Support", desc: "Study on the go, even without wifi" }
                             ].map((feature, index) => (
-                                <div key={index} className="border p-6">
+                                <div key={index} className="border p-6" data-aos="fade-up" data-aos-delay={index * 100}>
                                     <div className="mb-4">{feature.icon}</div>
                                     <h3 className="font-semibold mb-2">{feature.title}</h3>
                                     <p className="text-gray-600 text-sm">{feature.desc}</p>
                                 </div>
                             ))}
                         </div>
-                        <div className="border">
+                        <div className="border" data-aos="fade-up">
                             <div className="grid grid-cols-1 md:grid-cols-2">
                                 <div className="p-8 md:p-12">
                                     <h3 className="text-xl font-semibold mb-4">Career Path Programs</h3>
@@ -118,24 +131,24 @@ export default function client() {
                 {/* For Institutions Section */}
                 <section className="border-b py-16 px-6 md:px-10 bg-foreground text-background">
                     <div className="">
-                        <div className="mb-12">
+                        <div className="mb-12" data-aos="fade-up">
                             <p className="mb-2">For Educators</p>
                             <h2 className="text-2xl md:text-3xl font-bold max-w-3xl">
                                 Increase global accessibility to your educational resources.
                             </h2>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div>
+                            <div data-aos="fade-up" data-aos-delay="100">
                                 <p className="mb-6">
                                     Join our network of leading institutions and instructors to share knowledge, build your brand, and generate revenue while making quality education accessible.
                                 </p>
                                 <div className="space-y-6 mb-8">
                                     {[
-                                        { title: "Reach a diverse audience", desc: "Connect with students across 30+ African countries" },
-                                        { title: "Monetize your expertise", desc: "Earn revenue while sharing your knowledge" },
+                                        { title: "Reach a diverse audience", desc: "Reach students across 50+ African countries" },
+                                        { title: "Monetize your content", desc: "Earn revenue while sharing course material" },
                                         { title: "Powerful teaching tools", desc: "Use our platform to create engaging learning experiences" }
                                     ].map((item, index) => (
-                                        <div key={index} className="flex items-start">
+                                        <div key={index} className="flex items-start" data-aos="fade-up" data-aos-delay={200 + index * 100}>
                                             <div className="bg-gray-500 p-2 mr-4 rounded-sm">
                                                 <LuCheck className="" />
                                             </div>
@@ -157,7 +170,7 @@ export default function client() {
                 {/* Testimonials Section */}
                 <section className="border-b py-16 px-6 md:px-12">
                     <div className="max-w-6xl mx-auto">
-                        <div className="text-center mb-12">
+                        <div className="text-center mb-12" data-aos="fade-up">
                             <h2 className="text-2xl md:text-3xl font-bold mb-4">What Our Students Say</h2>
                             <p className="text-gray-600 max-w-2xl mx-auto">
                                 Join thousands of satisfied learners who have transformed their careers through our platform
@@ -181,7 +194,7 @@ export default function client() {
                                 { number: "100+", label: "Instructors" },
                                 { number: "30+", label: "Countries" }
                             ].map((stat, index) => (
-                                <div key={index} className="text-center p-6 border">
+                                <div key={index} className="text-center p-6 border" data-aos="fade-up" data-aos-delay={index * 100}>
                                     <div className="text-3xl md:text-4xl font-bold mb-2">{stat.number}</div>
                                     <p className="text-gray-600">{stat.label}</p>
                                 </div>
@@ -193,11 +206,11 @@ export default function client() {
                 {/* CTA Section */}
                 <section className="py-16 px-6 md:px-12 bg-gray-50">
                     <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-2xl md:text-3xl font-bold mb-4">Start your learning journey today</h2>
-                        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+                        <h2 className="text-2xl md:text-3xl font-bold mb-4" data-aos="fade-up">Start your learning journey today</h2>
+                        <p className="text-gray-600 mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                             Join over 50,000 students who are advancing their careers and expanding their knowledge with our courses.
                         </p>
-                        <div className="flex flex-col sm:flex-row justify-center gap-4">
+                        <div className="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
                             <Button className="rounded-sm">
                                 Browse Courses
                             </Button>
