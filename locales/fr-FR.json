@@ -1,3 +1,28 @@
 {
-    "lang": "FR"
+    "lang": "FR",
+    "COMING_SOON_LANDING": {
+        "header": "Nous lançons bientôt !",
+        "subheader": "Assistez au lancement de la prochaine plateforme éducative de classe mondiale en Afrique, en personne au Kigali Convention Center ou en direct sur Youtube & Instagram",
+        "remind_btn": "Me rappeler"
+    },
+    "header": {
+        "home": "accueil",
+        "courses": "cours",
+        "how_it_works": "comment ça marche",
+        "news": "actualités",
+        "login": "connexion",
+        "signup": "créer un compte"
+    },
+    "courses_tab": {
+        "science": "Science",
+        "technology": "Technologie",
+        "engineering": "Ingénierie",
+        "mathematics": "Mathématiques",
+        "arts": "Arts",
+        "business": "Commerce"
+    },
+    "how_it_works_tab": {
+        "educators": "Éducateurs",
+        "students": "Étudiants"
+    }
 }

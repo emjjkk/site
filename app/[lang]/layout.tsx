@@ -1,19 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, DM_Sans, Outfit } from "next/font/google";
 import "@/styles/globals.css";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"], });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"],});
+const hostGrotesk = DM_Sans({ variable: "--font-host-grotesk", subsets: ["latin"] });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Keita",
-  description: "...",
-};
-
-export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
+      <body className={`${hostGrotesk.className} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
