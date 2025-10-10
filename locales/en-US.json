@@ -1,3 +1,68 @@
 {
-    "lang": "EN"
+    "lang": "EN",
+    "pre_launch": {
+        "heading": "We'll be launching soon!",
+        "subtitle": "Don't forget to attend the Keita launch event in-person at Norrsken House Kigali or live on Youtube and Tiktok.",
+        "notify_me": "Notify Me"
+    },
+    "header": {
+        "contact": {
+            "email": "inquiries@keita.online",
+            "phone": "+250 733 333 222"
+        },
+        "nav": {
+            "courses": "courses",
+            "how_it_works": "how it works",
+            "news": "news",
+            "contact": "contact"
+        },
+        "courses_menu": {
+            "search_placeholder": "Search courses by name, subject, or institution",
+            "search_button": "Search courses",
+            "search_placeholder_mobile": "Search courses...",
+            "featured_title": "Featured courses",
+            "learn_more": "Learn More",
+            "browse_subject": "Browse by subject",
+            "browse_program": "Browse by program type",
+            "browse_institution": "Browse by Institution",
+            "see_all": "See all...",
+            "subjects": {
+                "language": "Language Courses",
+                "computer_science": "Computer Science & IT",
+                "data_science": "Data Science",
+                "physical_science": "Physical Science & Engineering",
+                "business": "Business Management",
+                "health": "Health Science",
+                "education": "Education",
+                "personal_dev": "Personal Development",
+                "social_sciences": "Social Sciences",
+                "arts": "Arts and Humanities"
+            },
+            "program_types": {
+                "short_courses": "Short Courses",
+                "professional": "Professional Certifications",
+                "degree": "Degree Programs",
+                "diploma": "Diploma Programs"
+            }
+        },
+        "how_it_works_menu": {
+            "students": {
+                "title": "For Students",
+                "description": "Temporibus nesciunt, atque aperiam debitis doloribus aspernatur molestias aliquid iure dolores?",
+                "link_text": "Learn More"
+            },
+            "institutions": {
+                "title": "For Institutions",
+                "description": "Temporibus nesciunt, atque aperiam debitis doloribus aspernatur molestias aliquid iure dolores?",
+                "link_text": "Learn More"
+            },
+            "developers": {
+                "title": "For Developers",
+                "description": "Temporibus nesciunt, atque aperiam debitis doloribus aspernatur molestias aliquid iure dolores?",
+                "link_text": "Learn More"
+            }
+        },
+        "get_started": "get started for free",
+        "login": "login"
+    }
 }
