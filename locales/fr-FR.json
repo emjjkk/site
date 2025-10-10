@@ -1,3 +1,68 @@
 {
-    "lang": "FR"
+    "lang": "FR",
+    "pre_launch": {
+        "heading": "Nous serons bientôt en ligne !",
+        "subtitle": "N'oubliez pas d'assister à l'événement de lancement de Keita en personne à Norrsken House Kigali ou en direct sur YouTube et TikTok.",
+        "notify_me": "Prévenez-moi"
+    },
+    "header": {
+        "contact": {
+            "email": "inquiries@keita.online",
+            "phone": "+250 733 333 222"
+        },
+        "nav": {
+            "courses": "cours",
+            "how_it_works": "comment ça marche",
+            "news": "actualités",
+            "contact": "contact"
+        },
+        "courses_menu": {
+            "search_placeholder": "Recherchez des cours par nom, matière ou établissement",
+            "search_button": "Rechercher des cours",
+            "search_placeholder_mobile": "Rechercher des cours...",
+            "featured_title": "Cours à la une",
+            "learn_more": "En savoir plus",
+            "browse_subject": "Parcourir par matière",
+            "browse_program": "Parcourir par type de programme",
+            "browse_institution": "Parcourir par établissement",
+            "see_all": "Voir tout...",
+            "subjects": {
+                "language": "Cours de langues",
+                "computer_science": "Informatique et technologies",
+                "data_science": "Science des données",
+                "physical_science": "Sciences physiques et ingénierie",
+                "business": "Gestion et commerce",
+                "health": "Sciences de la santé",
+                "education": "Éducation",
+                "personal_dev": "Développement personnel",
+                "social_sciences": "Sciences sociales",
+                "arts": "Arts et lettres"
+            },
+            "program_types": {
+                "short_courses": "Cours courts",
+                "professional": "Certifications professionnelles",
+                "degree": "Programmes de licence ou master",
+                "diploma": "Programmes de diplôme"
+            }
+        },
+        "how_it_works_menu": {
+            "students": {
+                "title": "Pour les étudiants",
+                "description": "Découvrez comment Keita aide les apprenants à développer leurs compétences et à réussir leurs études.",
+                "link_text": "En savoir plus"
+            },
+            "institutions": {
+                "title": "Pour les établissements",
+                "description": "Découvrez comment les institutions peuvent partager leurs cours et atteindre plus d’apprenants grâce à Keita.",
+                "link_text": "En savoir plus"
+            },
+            "developers": {
+                "title": "Pour les développeurs",
+                "description": "Découvrez comment les développeurs peuvent créer, intégrer et étendre l’écosystème Keita.",
+                "link_text": "En savoir plus"
+            }
+        },
+        "get_started": "commencer gratuitement",
+        "login": "connexion"
+    }
 }

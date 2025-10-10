@@ -44,6 +44,6 @@ export function middleware(request: { nextUrl?: any; headers?: { get: (arg0: str
 export const config = {
   matcher: [
     // Skip all internal paths (_next, api, static, etc.)
-    "/((?!_next|api|static|favicon.ico).*)",
+    "/((?!_next|api|static|favicon.ico|assets).*)",
   ],
 };
