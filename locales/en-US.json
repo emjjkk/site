@@ -64,5 +64,52 @@
         },
         "get_started": "get started for free",
         "login": "login"
+    },
+    "hero": {
+        "title": "Gain skills, get certified\\nOn Africa's leading higher ed platform",
+        "subtitle": "Access world-class courses from top global institutions. Learn at your own pace and advance your career with recognized certifications.",
+        "cta": {
+            "get_started": "Get Started",
+            "browse_courses": "Browse Courses"
+        },
+        "partners_label": "Trusted by leading institutions"
+    },
+    "footer": {
+        "about": {
+            "description": "Keita is a platform that connects learners with world-class educational opportunities from leading institutions globally."
+        },
+        "social": {
+            "facebook": "https://facebook.com/keita",
+            "twitter": "https://twitter.com/keita",
+            "linkedin": "https://linkedin.com/company/keita",
+            "instagram": "https://instagram.com/keita",
+            "youtube": "https://youtube.com/@keita"
+        },
+        "quick_links": {
+            "title": "Quick Links",
+            "about": "About Us",
+            "browse_courses": "Browse Courses",
+            "how_it_works": "How It Works",
+            "news_blog": "News & Blog",
+            "faq": "FAQ",
+            "contact": "Contact Us"
+        },
+        "partners": {
+            "title": "For Partners",
+            "for_institutions": "For Institutions",
+            "for_developers": "For Developers",
+            "become_partner": "Become a Partner",
+            "api_documentation": "API Documentation"
+        },
+        "contact": {
+            "title": "Get In Touch",
+            "address": "Norrsken House Kigali, KN 78 St, Kigali, Rwanda"
+        },
+        "bottom": {
+            "copyright": "© {year} Keita. All rights reserved.",
+            "privacy_policy": "Privacy Policy",
+            "terms_of_service": "Terms of Service",
+            "cookie_policy": "Cookie Policy"
+        }
     }
 }
