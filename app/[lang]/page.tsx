@@ -6,6 +6,9 @@ import DesktopHeader from '@/components/DesktopHeader'
 import MobileHeader from '@/components/MobileHeader'
 import HeroSection from '@/components/Hero'
 import Footer from '@/components/Footer'
+import Featured from '@/components/Featured'
+import ForStudentsBlock from '@/components/ForStudentsBlock'
+import ForEducatorsBlock from '@/components/ForEducatorsBlock'
 
 
 export default async function Page({ params, }: { params: Promise<{ lang: 'en-US' | 'fr-FR' }> }) {
@@ -19,7 +22,11 @@ export default async function Page({ params, }: { params: Promise<{ lang: 'en-US
       <div className="block lg:hidden"><MobileHeader dict={dict} /></div>
       <main>
         <HeroSection dict={dict} />
-        <section className="min-h-30 bg-neutral-100"></section>
+        <section className="min-h-30">
+          <Featured dict={dict}/>
+          <ForStudentsBlock/>
+          <ForEducatorsBlock/>
+        </section>
       </main>   
       <Footer dict={dict} />
     </>

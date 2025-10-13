@@ -11,7 +11,7 @@ export default function Footer({ dict }: any) {
             <div className="h-5"></div>
             <div className="h-[90px] bg-pattern-bold w-full"></div>
             {/* Main Footer Content */}
-            <div className="w-full px-4 md:px-10 py-8 md:py-12">
+            <div className="w-full px-4 md:px-12 py-8 md:py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* About Section */}
                     <div>

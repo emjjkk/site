@@ -1,15 +1,24 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { LuMailOpen, LuPhoneCall, LuChevronDown, LuArrowUpRight, LuArrowRight, LuGraduationCap, LuBuilding, LuCode } from 'react-icons/lu'
 
 export default function DesktopHeader({ dict }: any) {
     const d = dict
     const [extendedMenu, setExtendedMenu] = useState('false')
+    const [scrolled, setScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 0)
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     return (
         <>
-            <div className="w-full py-2 px-10 hidden lg:flex items-center justify-between border-b">
+            <div className="w-full py-2 px-14 hidden lg:flex items-center justify-between border-b">
                 <div className="flex items-center gap-5">
                     <div className="flex items-center gap-1 text-sm">{d.lang}<LuChevronDown /></div>
                 </div>
@@ -18,10 +27,10 @@ export default function DesktopHeader({ dict }: any) {
                     <p className="text-sm flex items-center gap-1"><LuPhoneCall />{d.header.contact.phone}</p>
                 </div>
             </div>
-            <div className='sticky top-0 z-[999]'>
-                <div className="bg-white w-full hidden lg:flex items-center justify-between px-10 py-2 z-[999]">
-                    <div className="flex items-center gap-7">
-                        <img src="/assets/logo.png" alt="Keita" className="h-7 w-auto relative bottom-[2px]" />
+            <div className={`sticky top-0 z-[999] ${scrolled ? 'border-b' : ''} `}>
+                <div className="bg-white w-full hidden lg:flex items-center justify-between px-12 py-2 z-[999]">
+                    <div className="flex items-center gap-6">
+                        <img src="/assets/logo.png" alt="Keita" className="h-6 w-auto relative bottom-[2px]" />
                     </div>
                     <div className="flex items-center gap-7">
                         <div className="flex items-center gap-4 relative">
@@ -29,11 +38,11 @@ export default function DesktopHeader({ dict }: any) {
                             <a onClick={() => setExtendedMenu(extendedMenu === 'hiw' ? 'false' : 'hiw')} className="cursor-pointer text-md flex items-center gap-1 capitalize hover:text-[#f44034ff]">{d.header.nav.how_it_works}<LuChevronDown className='text-sm relative' /></a>
                             <a href="/blog" className="text-md flex items-center gap-1 capitalize hover:text-[#f44034ff]">{d.header.nav.news}</a>
                         </div>
-                        <a href="/signup"><button className="font-mono py-3 px-5 text-white bg-[#ecc94bff] hover:bg-[#f44034ff] hover:cursor-pointer rounded-full text-sm capitalize">{d.header.get_started}</button></a>
+                        <a href="/signup"><button className="font-mono py-3 px-5 text-white bg-[#ecc94bff] hover:bg-[#f44034ff] hover:cursor-pointer rounded-lg text-sm capitalize">{d.header.get_started}</button></a>
                     </div>
                 </div>
                 {extendedMenu != 'false' ? (
-                    <div className="absolute w-full px-10 z-[999]">
+                    <div className="absolute w-full px-12 z-[999]">
                         {extendedMenu == "courses" ? (
                             <div className="bg-neutral-50 rounded-lg border border-1 border-neutral-300 min-h-64 ">
                                 <div className="w-full flex items-center justify-center px-8 pt-5">

@@ -27,13 +27,13 @@ export default function HeroSection({ dict }: any) {
                 {/* CTA Buttons */}
                 <div className="flex flex-row items-center gap-3 mb-20 md:mb-[110px]">
                     <a href="/signup">
-                        <button className="font-mono py-3 px-5 text-white bg-[#f44034ff] hover:bg-[#d63529ff]  border-2 border-[#f44034ff]  rounded-full text-sm transition-colors flex items-center gap-2 w-full sm:w-auto justify-center">
+                        <button className="font-mono py-3 px-5 text-white bg-[#f44034ff] hover:bg-[#d63529ff]  border-2 border-[#f44034ff]  rounded-lg text-sm transition-colors flex items-center gap-2 w-full sm:w-auto justify-center">
                             {d.hero.cta.get_started}
                             <LuArrowRight className="text-sm" />
                         </button>
                     </a>
                     <a href="/courses">
-                        <button className="font-mono py-3 px-5 text-neutral-800 bg-white hover:bg-neutral-50 border-2 border-neutral-300 rounded-full text-sm transition-colors w-full sm:w-auto">
+                        <button className="font-mono py-3 px-5 text-neutral-800 bg-white hover:bg-neutral-50 border-2 border-neutral-300 rounded-lg text-sm transition-colors w-full sm:w-auto">
                             {d.hero.cta.browse_courses}
                         </button>
                     </a>
