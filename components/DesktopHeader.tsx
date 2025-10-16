@@ -30,13 +30,15 @@ export default function DesktopHeader({ dict }: any) {
             <div className={`sticky top-0 z-[999] ${scrolled ? 'border-b' : ''} `}>
                 <div className="bg-white w-full hidden lg:flex items-center justify-between px-12 py-2 z-[999]">
                     <div className="flex items-center gap-6">
-                        <img src="/assets/logo.png" alt="Keita" className="h-6 w-auto relative bottom-[2px]" />
+                        <a href="/">
+                            <img src="/assets/logo.png" alt="Keita" className="h-6 w-auto relative bottom-[2px]" />
+                        </a>
                     </div>
                     <div className="flex items-center gap-7">
                         <div className="flex items-center gap-4 relative">
                             <a onClick={() => setExtendedMenu(extendedMenu === 'courses' ? 'false' : 'courses')} className="hover:cursor-pointer text-md flex items-center gap-1 capitalize hover:text-[#f44034ff]">{d.header.nav.courses}<LuChevronDown className='text-sm relative' /></a>
                             <a onClick={() => setExtendedMenu(extendedMenu === 'hiw' ? 'false' : 'hiw')} className="cursor-pointer text-md flex items-center gap-1 capitalize hover:text-[#f44034ff]">{d.header.nav.how_it_works}<LuChevronDown className='text-sm relative' /></a>
-                            <a href="/blog" className="text-md flex items-center gap-1 capitalize hover:text-[#f44034ff]">{d.header.nav.news}</a>
+                            <a href="/news" className="text-md flex items-center gap-1 capitalize hover:text-[#f44034ff]">{d.header.nav.news}</a>
                         </div>
                         <a href="/signup"><button className="font-mono py-3 px-5 text-white bg-[#ecc94bff] hover:bg-[#f44034ff] hover:cursor-pointer rounded-lg text-sm capitalize">{d.header.get_started}</button></a>
                     </div>
@@ -46,12 +48,12 @@ export default function DesktopHeader({ dict }: any) {
                         {extendedMenu == "courses" ? (
                             <div className="bg-neutral-50 rounded-lg border border-1 border-neutral-300 min-h-64 ">
                                 <div className="w-full flex items-center justify-center px-8 pt-5">
-                                    <div className="flex items-center border border-neutral-400 border-1 rounded-full p-[2px] w-2/4">
+                                    <div className="flex items-center border border-neutral-400 border-1 rounded-lg p-[2px] w-2/4">
                                         <input type="text" name="" id="" className="py-3 px-5 text-sm outline-none flex-1" placeholder={d.header.courses_menu.search_placeholder} />
-                                        <button type="submit" className="text-sm rounded-full py-3 px-5 text-white bg-[#ecc94bff] hover:bg-[#f44034ff] flex items-center gap-1">{d.header.courses_menu.search_button}<LuArrowRight /></button>
+                                        <button type="submit" className="text-sm rounded-lg py-3 px-5 text-white bg-[#ecc94bff] hover:bg-[#f44034ff] flex items-center gap-1">{d.header.courses_menu.search_button}<LuArrowRight /></button>
                                     </div>
                                 </div>
-                                <div className="w-full flex justify-between gap-16 px-8 py-5">
+                                <div className="w-full flex justify-between gap-16 px-8 py-6">
                                     <div className='w-1/3'>
                                         <h2 className="text-md font-mono mb-3">{d.header.courses_menu.featured_title}</h2>
                                         <div className="flex border rounded-lg mb-2">

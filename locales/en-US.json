@@ -1,115 +1,139 @@
 {
-    "lang": "EN",
-    "pre_launch": {
-        "heading": "We'll be launching soon!",
-        "subtitle": "Don't forget to attend the Keita launch event in-person at Norrsken House Kigali or live on Youtube and Tiktok.",
-        "notify_me": "Notify Me"
+  "lang": "EN",
+  "pre_launch": {
+    "heading": "We'll be launching soon!",
+    "subtitle": "Don't forget to attend the Keita launch event in-person at Norrsken House Kigali or live on Youtube and TikTok.",
+    "notify_me": "Notify Me"
+  },
+  "header": {
+    "contact": {
+      "email": "inquiries@keita.online",
+      "phone": "+250 733 333 222"
     },
-    "header": {
-        "contact": {
-            "email": "inquiries@keita.online",
-            "phone": "+250 733 333 222"
-        },
-        "nav": {
-            "courses": "courses",
-            "how_it_works": "how it works",
-            "news": "news",
-            "contact": "contact"
-        },
-        "courses_menu": {
-            "search_placeholder": "Search courses by name, subject, or institution",
-            "search_button": "Search courses",
-            "search_placeholder_mobile": "Search courses...",
-            "featured_title": "Featured courses",
-            "learn_more": "Learn More",
-            "browse_subject": "Browse by subject",
-            "browse_program": "Browse by program type",
-            "browse_institution": "Browse by Institution",
-            "see_all": "See all...",
-            "subjects": {
-                "language": "Language Courses",
-                "computer_science": "Computer Science & IT",
-                "data_science": "Data Science",
-                "physical_science": "Physical Science & Engineering",
-                "business": "Business Management",
-                "health": "Health Science",
-                "education": "Education",
-                "personal_dev": "Personal Development",
-                "social_sciences": "Social Sciences",
-                "arts": "Arts and Humanities"
-            },
-            "program_types": {
-                "short_courses": "Short Courses",
-                "professional": "Professional Certifications",
-                "degree": "Degree Programs",
-                "diploma": "Diploma Programs"
-            }
-        },
-        "how_it_works_menu": {
-            "students": {
-                "title": "For Students",
-                "description": "Temporibus nesciunt, atque aperiam debitis doloribus aspernatur molestias aliquid iure dolores?",
-                "link_text": "Learn More"
-            },
-            "institutions": {
-                "title": "For Institutions",
-                "description": "Temporibus nesciunt, atque aperiam debitis doloribus aspernatur molestias aliquid iure dolores?",
-                "link_text": "Learn More"
-            },
-            "developers": {
-                "title": "For Developers",
-                "description": "Temporibus nesciunt, atque aperiam debitis doloribus aspernatur molestias aliquid iure dolores?",
-                "link_text": "Learn More"
-            }
-        },
-        "get_started": "get started for free",
-        "login": "login"
+    "nav": {
+      "courses": "Courses",
+      "how_it_works": "How it works",
+      "news": "News",
+      "contact": "Contact"
     },
-    "hero": {
-        "title": "Gain skills, get certified\\nOn Africa's leading higher ed platform",
-        "subtitle": "Access world-class courses from top global institutions. Learn at your own pace and advance your career with recognized certifications.",
-        "cta": {
-            "get_started": "Get Started",
-            "browse_courses": "Browse Courses"
-        },
-        "partners_label": "Trusted by leading institutions"
+    "courses_menu": {
+      "search_placeholder": "Search courses by name, subject, or institution",
+      "search_button": "Search Courses",
+      "search_placeholder_mobile": "Search courses...",
+      "featured_title": "Featured Courses",
+      "learn_more": "Learn More",
+      "browse_subject": "Browse by subject",
+      "browse_program": "Browse by program type",
+      "browse_institution": "Browse by Institution",
+      "see_all": "See all...",
+      "subjects": {
+        "language": "Language Courses",
+        "computer_science": "Computer Science & IT",
+        "data_science": "Data Science",
+        "physical_science": "Physical Science & Engineering",
+        "business": "Business Management",
+        "health": "Health Science",
+        "education": "Education",
+        "personal_dev": "Personal Development",
+        "social_sciences": "Social Sciences",
+        "arts": "Arts and Humanities"
+      },
+      "program_types": {
+        "short_courses": "Short Courses",
+        "professional": "Professional Certifications",
+        "degree": "Degree Programs",
+        "diploma": "Diploma Programs"
+      }
     },
-    "footer": {
-        "about": {
-            "description": "Keita is a platform that connects learners with world-class educational opportunities from leading institutions globally."
-        },
-        "social": {
-            "facebook": "https://facebook.com/keita",
-            "twitter": "https://twitter.com/keita",
-            "linkedin": "https://linkedin.com/company/keita",
-            "instagram": "https://instagram.com/keita",
-            "youtube": "https://youtube.com/@keita"
-        },
-        "quick_links": {
-            "title": "Quick Links",
-            "about": "About Us",
-            "browse_courses": "Browse Courses",
-            "how_it_works": "How It Works",
-            "news_blog": "News & Blog",
-            "faq": "FAQ",
-            "contact": "Contact Us"
-        },
-        "partners": {
-            "title": "For Partners",
-            "for_institutions": "For Institutions",
-            "for_developers": "For Developers",
-            "become_partner": "Become a Partner",
-            "api_documentation": "API Documentation"
-        },
-        "contact": {
-            "title": "Get In Touch",
-            "address": "Norrsken House Kigali, KN 78 St, Kigali, Rwanda"
-        },
-        "bottom": {
-            "copyright": "© {year} Keita. All rights reserved.",
-            "privacy_policy": "Privacy Policy",
-            "terms_of_service": "Terms of Service",
-            "cookie_policy": "Cookie Policy"
-        }
+    "how_it_works_menu": {
+      "students": {
+        "title": "For Students",
+        "description": "Access world-class courses, learn at your own pace, and gain certifications recognized globally.",
+        "link_text": "Learn More"
+      },
+      "institutions": {
+        "title": "For Institutions",
+        "description": "Connect your institution with learners worldwide and showcase your programs.",
+        "link_text": "Learn More"
+      },
+      "developers": {
+        "title": "For Developers",
+        "description": "Integrate our platform APIs, access course data, and build educational apps.",
+        "link_text": "Learn More"
+      }
+    },
+    "get_started": "Get started for free",
+    "login": "Login"
+  },
+  "hero": {
+    "title": "Gain skills, get certified\\nOn Africa's leading higher ed platform",
+    "subtitle": "Access world-class courses from top global institutions. Learn at your own pace and advance your career with recognized certifications.",
+    "cta": {
+      "get_started": "Get Started",
+      "browse_courses": "Browse Courses"
+    },
+    "partners_label": "Trusted by leading institutions"
+  },
+  "courses_page": {
+    "title": "Browse Courses",
+    "subtitle": "Explore hundreds of courses from world-class institutions.",
+    "search_placeholder": "Search by course name, subject, or institution...",
+    "showing_results": "Showing {count} courses",
+    "filters": {
+      "title": "Filters",
+      "all": "All",
+      "subject": "Subject",
+      "program_type": "Program Type",
+      "institution": "Institution",
+      "clear_all": "Clear all",
+      "apply": "Apply Filters"
+    },
+    "sort": {
+      "newest": "Newest First",
+      "popular": "Most Popular",
+      "alphabetical": "Alphabetical"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
     }
+  },
+  "footer": {
+    "about": {
+      "description": "Keita is a platform that connects learners with world-class educational opportunities from leading institutions globally."
+    },
+    "social": {
+      "facebook": "https://facebook.com/keita",
+      "twitter": "https://twitter.com/keita",
+      "linkedin": "https://linkedin.com/company/keita",
+      "instagram": "https://instagram.com/keita",
+      "youtube": "https://youtube.com/@keita"
+    },
+    "quick_links": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "browse_courses": "Browse Courses",
+      "how_it_works": "How It Works",
+      "news_blog": "News & Blog",
+      "faq": "FAQ",
+      "contact": "Contact Us"
+    },
+    "partners": {
+      "title": "For Partners",
+      "for_institutions": "For Institutions",
+      "for_developers": "For Developers",
+      "become_partner": "Become a Partner",
+      "api_documentation": "API Documentation"
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "address": "Norrsken House Kigali, KN 78 St, Kigali, Rwanda"
+    },
+    "bottom": {
+      "copyright": "© {year} Keita. All rights reserved.",
+      "privacy_policy": "Privacy Policy",
+      "terms_of_service": "Terms of Service",
+      "cookie_policy": "Cookie Policy"
+    }
+  }
 }
